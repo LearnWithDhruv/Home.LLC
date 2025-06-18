@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "fetch-blob": "^4.0.0",
+    "form-data": "^4.0.3",
+    "formdata-node": "^6.0.3",
+    "node-fetch": "^2.7.0",
+    "openai": "^5.3.0",
+    "python-shell": "^5.0.0"
+  }
+}
