@@ -1,7 +1,7 @@
 
-#  Voice Bot using ChatGPT API (POC)
+#  Voice Bot using GROK API (POC)
 
-This project is a proof-of-concept (POC) voice bot built using ChatGPT’s API. It can respond like ChatGPT to a predefined set of personal questions (and more), providing human-like responses to voice inputs. It includes a front-end client and a Node.js-based backend server.
+This project is a proof-of-concept (POC) voice bot built using Grok’s API. It can respond like grok to a predefined set of personal questions (and more), providing human-like responses to voice inputs. It includes a front-end client and a Node.js-based backend server.
 
 ---
 
@@ -18,7 +18,7 @@ This project is a proof-of-concept (POC) voice bot built using ChatGPT’s API. 
 │   ├── models/           # Logic or future database schema
 │   ├── node_modules/     # Installed npm dependencies
 │   └── .env              # API keys and configuration
-├── server.js             # Backend server setup (Express + OpenAI)
+├── server.js             # Backend server setup (Express + Grok)
 ├── package.json
 ├── package-lock.json
 ```
@@ -29,7 +29,7 @@ This project is a proof-of-concept (POC) voice bot built using ChatGPT’s API. 
 
 - Records voice input from the browser.
 - Sends audio/text data to server.
-- Server calls OpenAI's ChatGPT API.
+- Server calls Grok's API.
 - Bot responds with natural answers to personal-type questions.
 - Modular structure ready for future expansion (database, authentication, etc.).
 
@@ -55,16 +55,8 @@ npm install
 Inside the `server/` folder, create a `.env` file and add your OpenAI API key:
 
 ```env
-OPENAI_API_KEY=your-openai-api-key
+Groq_API_KEY=your-grok-api-key
 ```
-
-You can also define the model (optional):
-
-```env
-OPENAI_MODEL=gpt-4
-```
-
----
 
 ##  Run the Server
 
